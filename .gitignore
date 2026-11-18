@@ -1,0 +1,16 @@
+node_modules/
+dist/
+build-test/
+coverage/
+*.log
+*.tgz
+.DS_Store
+Thumbs.db
+
+# Never commit real mail archives or exports
+*.pst
+*.ost
+*.msg
+!test/fixtures/**/*.msg
+/export/
+/out/

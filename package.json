@@ -1,0 +1,58 @@
+{
+  "name": "pstpeek",
+  "version": "0.1.0-alpha.1",
+  "description": "Experimental (alpha): open Outlook .pst/.ost/.msg files without Outlook - browse, list, search and export to EML, mbox or JSON. Local, read-only, zero runtime dependencies.",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "pstpeek": "dist/bin.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepare": "npm run build",
+    "typecheck": "tsc -p tsconfig.test.json --noEmit",
+    "pretest": "tsc -p tsconfig.test.json",
+    "test": "node --test \"build-test/test/**/*.test.js\"",
+    "clean": "node -e \"for (const d of ['dist','build-test']) require('fs').rmSync(d,{recursive:true,force:true})\""
+  },
+  "keywords": [
+    "pst",
+    "ost",
+    "msg",
+    "outlook",
+    "email",
+    "eml",
+    "mbox",
+    "export",
+    "cli",
+    "offline"
+  ],
+  "devDependencies": {
+    "@types/node": "~22.20.5",
+    "typescript": "~5.9.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Emincanozen/pstpeek.git"
+  },
+  "homepage": "https://github.com/Emincanozen/pstpeek#readme",
+  "bugs": {
+    "url": "https://github.com/Emincanozen/pstpeek/issues"
+  }
+}
