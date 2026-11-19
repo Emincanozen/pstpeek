@@ -363,6 +363,10 @@ Nothing below is promised; it is the list of known gaps, roughly in order of pri
 - Fuzzing of the parsers.
 - A cross-check against an independent reader (for example libpff) on shared test files.
 
+## Contributing
+
+Issues and pull requests are welcome: see [CONTRIBUTING.md](CONTRIBUTING.md). Security problems go through [SECURITY.md](SECURITY.md). Changes are listed in [CHANGELOG.md](CHANGELOG.md).
+
 ## License
 
 [MIT](LICENSE) © pstpeek contributors.
