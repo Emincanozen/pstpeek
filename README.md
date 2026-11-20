@@ -10,6 +10,8 @@
 > incomplete or wrong. Keep your original archive, and check exported results before you rely on them.
 
 <p align="center">
+  <a href="https://www.npmjs.com/package/pstpeek"><img alt="npm version" src="https://img.shields.io/npm/v/pstpeek?logo=npm"></a>
+  <a href="https://www.npmjs.com/package/pstpeek"><img alt="npm downloads" src="https://img.shields.io/npm/dm/pstpeek"></a>
   <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-blue"></a>
   <img alt="Node.js 22 or newer" src="https://img.shields.io/badge/node-%3E%3D22-339933?logo=nodedotjs&logoColor=white">
   <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-5.9-3178c6?logo=typescript&logoColor=white">
@@ -55,6 +57,15 @@ mail out in standard formats. Please read [Limitations](#limitations) before rel
 
 Requires Node.js 22 or newer.
 
+Install from npm (alpha release):
+
+```sh
+npm install -g pstpeek
+pstpeek tree path/to/archive.pst
+```
+
+Or build from source:
+
 ```sh
 git clone https://github.com/Emincanozen/pstpeek.git
 cd pstpeek
@@ -65,7 +76,7 @@ node dist/bin.js tree path/to/archive.pst
 ```
 
 Optionally `npm link` puts the `pstpeek` command on your PATH; the examples below assume that. `dist/` is
-not committed. The package is not published to npm. On Windows PowerShell with a restricted execution
+not committed. On Windows PowerShell with a restricted execution
 policy, call `npm.cmd` / `npx.cmd` instead of `npm` / `npx`.
 
 ## Demo
